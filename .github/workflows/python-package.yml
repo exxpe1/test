@@ -44,8 +44,7 @@ jobs:
         genbadge tests
     - name: Coverage
       run: |
-        coverage report
         coverage xml
-        coverage html
+        ls
         genbadge coverage
         
