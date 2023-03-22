@@ -1,7 +1,6 @@
 <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml">
 [![Tests Status](./tests-badge.svg)](./reports/junit/report.html)<br>
-[![Coverage Status](./tests-badge.svg?dummy=8484744)](./reports/coverage/index.html)
-[![Tests Status](/home/runner/work/test/test/tests-badge.svg?dummy=8484744)](/home/runner/work/test/test/reports/junit/report.html)
+[![Coverage Status](./coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html)<br>
 
 # CompatibL Runtime Community Edition
 
