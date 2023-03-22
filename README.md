@@ -1,3 +1,5 @@
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml">
+
 # CompatibL Runtime Community Edition
 
 ## Overview
