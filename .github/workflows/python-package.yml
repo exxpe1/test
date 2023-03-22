@@ -44,7 +44,7 @@ jobs:
         genbadge tests
     - name: Coverage
       run: |
-        coverage run pytest
-        ls
+        coverage run -m pytest
+        coverage report -m
         genbadge coverage
         
