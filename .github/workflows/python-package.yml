@@ -54,8 +54,6 @@ jobs:
     - name: Coverage badge
       run: |
         genbadge coverage -i ./coverage.xml
-    - uses: actions/checkout@v3
-    - run: mkdir output
     - run: cat coverage.xml > output/coverage.xml
     - uses: actions/upload-artifact@v3
   # with:
