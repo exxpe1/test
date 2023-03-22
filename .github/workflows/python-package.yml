@@ -41,7 +41,7 @@ jobs:
         #PATH_CL_PYTHON=./cl
         #echo "PYTHONPATH=$PATH_CL_PYTHON;$PYTHONPATH" >> $GITHUB_ENV
         |
-        echo "::set-env name=PYTHONPATH::home/runner/work/test"
+        echo "PYTHONPATH::home/runner/work/test" >> $GITHUB_ENV
     - name: Test with pytest
       run: |
         pytest
