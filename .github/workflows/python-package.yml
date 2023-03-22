@@ -42,10 +42,13 @@ jobs:
       run: |
         pytest --junitxml=reports/junit/junit.xml --html=reports/junit/report.html
         genbadge tests
+    - name: ls
+      run: ls        
     - name: Coverage
       run: |
         coverage run -m pytest
         coverage report -m
         coverage xml -o coverage.xml
-        genbadge coverage
+    - name: ls
+      run: ls
         
