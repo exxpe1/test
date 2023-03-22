@@ -51,4 +51,6 @@ jobs:
         coverage xml -o coverage.xml
     - name: ls
       run: ls
-        
+    - name: Coverage badge
+      run: |
+        genbadge coverage -i ./coverage.xml
