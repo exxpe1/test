@@ -38,29 +38,31 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Test with pytest
-      run: |
-        pytest --junitxml=reports/junit/junit.xml --html=reports/junit/report.html
-        genbadge tests
-    - name: ls
-      run: ls        
-    - name: Coverage
-      run: |
-        coverage run -m pytest
-        coverage report -m
-        coverage xml -o coverage.xml
-    - name: ls
-      run: ls
-    - name: Coverage badge
-      run: |
-        genbadge coverage -i ./coverage.xml
-    - run: cat coverage.xml > output/coverage.xml
-    - uses: actions/upload-artifact@v3
-  # with:
-  #   name: my-artifact
-  #   path: path/to/artifact/world.txt        
-  #   - name: Archive code coverage results
-  #     uses: actions/upload-artifact@v3
-  #     with:
-  #       name: code-coverage-report
-  #       path: /tests/code-coverage.html
+      - name: Run coverage
+        run: |
+          coverage run ...
+          coverage report -m
+
+      - name: Coverage Badge
+        uses: tj-actions/coverage-badge-py@v2
+
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v13
+        id: verify-changed-files
+        with:
+          files: coverage.svg
+
+      - name: Commit files
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add coverage.svg
+          git commit -m "Updated coverage.svg"
+
+      - name: Push changes
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.github_token }}
+          branch: ${{ github.ref }}
