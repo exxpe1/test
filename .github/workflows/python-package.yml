@@ -43,7 +43,7 @@ jobs:
         coverage run -m pytest
         coverage report -m
 
-    - name: Coverage Badge
+    - name: Coverage Badge1
       uses: tj-actions/coverage-badge-py@v2
 
     - name: Verify Changed files
