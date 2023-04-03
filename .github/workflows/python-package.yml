@@ -30,7 +30,7 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        pip install coverage
+        pip install genbadge[all] pytest-html coverage
         pip install -e .
     - name: Lint with flake8
       run: |
@@ -38,20 +38,20 @@ jobs:
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - name: Run coverage
+    - name: Test with pytest
+      run: |
+        pytest --junitxml=reports/junit/junit.xml --html=reports/junit/report.html
+        genbadge tests      
+    - name: Coverage
       run: |
         coverage run -m pytest
         coverage report -m
-
-    - name: Coverage Badge1
-      uses: tj-actions/coverage-badge-py@v2
-
-    - name: Verify Changed files
-      uses: tj-actions/verify-changed-files@v13
-      id: verify-changed-files
-      with:
-        files: coverage.svg
-
+        coverage xml -o coverage.xml
+    - name: Coverage badge
+      run: |
+        genbadge coverage -i ./coverage.xml
+    - run: cat coverage.xml > output/coverage.xml
+    - uses: actions/upload-artifact@v3
     - name: Commit files
       if: steps.verify-changed-files.outputs.files_changed == 'true'
       run: |
