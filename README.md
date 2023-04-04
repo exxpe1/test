@@ -1,12 +1,10 @@
 <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml"><br>
 
-![Tests Status](./tests-badge.svg)]
-
-[![Tests Status](./tests-badge.svg?dummy=8484744)](./reports/junit/report.html)
+![Tests Status](./tests-badge.svg?dummy=8484744)
 
 ![Coverage badge](/coverage-badge.svg?dummy=8484744)
 
-[![Coverage Status](./coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html)
+[![Flake8 Status](./flake8-badge.svg?dummy=8484744)
 
 # CompatibL Runtime Community Edition
 
