@@ -1,6 +1,12 @@
-<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml">
-[![Tests Status](./tests-badge.svg)](./reports/junit/report.html)<br>
-[![Coverage Status](./coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html)<br>
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml"><br>
+
+![Tests Status](./tests-badge.svg)]
+
+[![Tests Status](./tests-badge.svg?dummy=8484744)](./reports/junit/report.html)
+
+![Coverage badge](/coverage-badge.svg?dummy=8484744)
+
+[![Coverage Status](./coverage-badge.svg?dummy=8484744)](./reports/coverage/index.html)
 
 # CompatibL Runtime Community Edition
 

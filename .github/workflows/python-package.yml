@@ -42,21 +42,17 @@ jobs:
       run: |
         pytest --junitxml=reports/junit/junit.xml --html=reports/junit/report.html
         genbadge tests      
-    - name: Coverage
+    - name: Coverage badge
       run: |
         coverage run -m pytest
         coverage report -m
         coverage xml -o coverage.xml
-    - name: Coverage badge
-      run: |
-        genbadge coverage -i ./coverage.xml
-        cat coverage.xml > output/coverage.xml
-
+        genbadge coverage -i ./coverage.xml 
     - name: Commit files
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add tests-badge.svg coverage-badge.svg
+        git add tests-badge.svg coverage-badge.svg ./reports/junit/report.html ./reports/coverage/index.html
         git commit -m "Updated badges"
 
     - name: Push changes
