@@ -50,8 +50,8 @@ jobs:
     - name: Coverage badge
       run: |
         genbadge coverage -i ./coverage.xml
-    - run: cat coverage.xml > output/coverage.xml
-    - uses: actions/upload-artifact@v3
+        cat coverage.xml > output/coverage.xml
+
     - name: Commit files
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
