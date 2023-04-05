@@ -52,7 +52,7 @@ jobs:
       uses: tj-actions/verify-changed-files@v13
       id: verify-changed-files
       with:
-        files: coverage.svg        
+        files: tests-badge.svg coverage-badge.svg      
     - name: Commit files
       if: steps.verify-changed-files.outputs.files_changed == 'true'
       run: |
