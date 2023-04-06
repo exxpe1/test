@@ -1,10 +1,6 @@
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml)
-
-[![codecov](https://codecov.io/gh/exxpe1/test/branch/master/graph/badge.svg?token=2HAOJT62HU)](https://codecov.io/gh/exxpe1/test)
-
 
 # CompatibL Runtime Community Edition
-
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml) [![codecov](https://codecov.io/gh/exxpe1/test/branch/master/graph/badge.svg?token=2HAOJT62HU)](https://codecov.io/gh/exxpe1/test) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cl-runtime)
 ## Overview
 
 CompatibL Runtime Community Edition is an open source project 
