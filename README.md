@@ -1,10 +1,7 @@
-<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml"><br>
+<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml">
 
-<img alt="Codecov" src="https://img.shields.io/codecov/c/github/exxpe1/test?token=13e58b8d-96e6-4c07-b5ee-e0e1385cfb0c">
+<img alt="Codecov" src="https://img.shields.io/codecov/c/github/exxpe1/test">
 
-![Tests Status](./tests-badge.svg?dummy=8484744)
-
-![Coverage badge](/coverage-badge.svg?dummy=8484744)
 
 # CompatibL Runtime Community Edition
 
