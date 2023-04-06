@@ -1,6 +1,6 @@
-<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml">
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml)
 
-<img alt="Codecov" src="https://img.shields.io/codecov/c/github/exxpe1/test">
+[![codecov](https://codecov.io/gh/exxpe1/test/branch/master/graph/badge.svg?token=2HAOJT62HU)](https://codecov.io/gh/exxpe1/test)
 
 
 # CompatibL Runtime Community Edition
