@@ -1,5 +1,6 @@
 
 # CompatibL Runtime Community Edition
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/84e054cea0a245d3a17278629891ffd4)](https://app.codacy.com/gh/exxpe1/test?utm_source=github.com&utm_medium=referral&utm_content=exxpe1/test&utm_campaign=Badge_Grade)
 ![PyPI](https://img.shields.io/pypi/v/cl-runtime) ![PyPI - Downloads](https://img.shields.io/pypi/dm/cl-runtime) ![GitHub](https://img.shields.io/github/license/exxpe1/test) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/exxpe1/test/python-package.yml) [![codecov](https://codecov.io/gh/exxpe1/test/branch/master/graph/badge.svg?token=2HAOJT62HU)](https://codecov.io/gh/exxpe1/test) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cl-runtime) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/exxpe1/test)
 ## Overview
 
