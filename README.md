@@ -7,6 +7,7 @@
 [![codecov](https://codecov.io/gh/exxpe1/test/branch/master/graph/badge.svg?token=2HAOJT62HU)](https://codecov.io/gh/exxpe1/test) 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cl-runtime) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/exxpe1/test)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a3291f411a634b5ca69d49fbbebc455c)](https://app.codacy.com/gh/exxpe1/test/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 ## Overview
 
 CompatibL Runtime Community Edition is an open source project 
