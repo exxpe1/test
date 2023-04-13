@@ -17,9 +17,9 @@ end for data browsing and visualization.
 
 It includes:
 
-* Polymorphic, type-safe database support
-* Polymorphic, type-safe REST APIs
-* Adapter for running the code from an HTML5 front end 
-* Command line interface (CLI)
-* Logging
-* Public and private cloud support
+*  Polymorphic, type-safe database support
+*  Polymorphic, type-safe REST APIs
+*  Adapter for running the code from an HTML5 front end 
+*  Command line interface (CLI)
+*  Logging
+*  Public and private cloud support
